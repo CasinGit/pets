@@ -1,0 +1,49 @@
+.item {
+    /* 고정 */
+    border: 1px solid blue;
+    margin: 5px;
+    padding: 3px;
+    /* 고정 */
+
+    width: 30%;
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+    /* flex-wrap: wrap; */
+}
+
+.item:hover {
+    transform: scale(1.02);
+    background-color: ghostwhite;
+}
+
+.thumbnail {
+    width: 40%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.inform {
+    width: 58%;
+    text-align: left;
+    padding-left: 2px;
+}
+
+.inform div {
+    white-space: wrap;
+}
+
+.inform-title {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.inform-content {
+    margin-top: 12px;
+    font-size: 0.8em;
+    color: dimgray;
+}
+
+.inform-content p {
+    margin-bottom: 8px;
+}

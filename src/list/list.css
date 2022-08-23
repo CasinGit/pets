@@ -1,0 +1,23 @@
+.list {
+    /* 고정 */
+    /* border: 1px solid red; */
+    margin: 5px;
+    padding: 5px;
+    /* 고정 */
+
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.detail+.list {
+    width: 40%;
+    overflow-y: scroll;
+    height: 90vh;
+    overflow-x: hidden;
+}
+
+.detail+.list .item {
+    width: 100%;
+}
