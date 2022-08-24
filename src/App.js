@@ -4,7 +4,7 @@ import List from './list/list';
 import Detail from './detail/detail';
 import Search from './search/search';
 import Loading from './loading/loading';
-const key = "14vO7irUqxzcsU123CehPOI8f5Awq8qy9AwUSrZSFQixbxoV1vdWejk6bnA%2Fvk1cT58WAzlan35rbSLKs1t3QQ%3D%3D";
+const key = process.env.REACT_APP_API_KEY;
 
 function App() {
     console.log("App render...");
