@@ -15,8 +15,8 @@ function App() {
     const [sido, setSido] = useState([]);
     const [loading, setLoading] = useState(null);
 
-    let petsUrl = `http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30`;
-    let sidoUrl = `http://apis.data.go.kr/1543061/abandonmentPublicSrvc/sido?numOfRows=20&serviceKey=${key}&_type=json`;
+    let petsUrl = `https://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30`;
+    let sidoUrl = `https://apis.data.go.kr/1543061/abandonmentPublicSrvc/sido?numOfRows=20&serviceKey=${key}&_type=json`;
 
     useEffect(() => {
         console.log("useEffect...");
@@ -48,7 +48,7 @@ function App() {
     }, [pets])
 
     const handleSearch = (bgnde, endde, sido, kind) => {
-        petsUrl = `http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30&bgnde=${bgnde}&endde=${endde}&upr_cd=${sido}&upkind=${kind}`;
+        petsUrl = `https://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30&bgnde=${bgnde}&endde=${endde}&upr_cd=${sido}&upkind=${kind}`;
 
         setLoading(true);
 
