@@ -1,0 +1,24 @@
+name: "Label Critical Enhancements"
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  label-critical:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add '🚨 긴급' label if priority is Critical
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueBody = context.payload.issue.body;
+            const isCritical = issueBody.includes("매우 높음 (Critical)");
+            if (isCritical) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: ['🚨 긴급']
+              });
+            }
