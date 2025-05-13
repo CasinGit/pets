@@ -1,7 +1,7 @@
 name: "\U0001F41E Bug Report"
 description: 버그를 발견하면 여기에 제보하세요.
 title: "[Bug] "
-labels: [🐞 버그]
+labels: [bug]
 assignees:
     - CasinGit
 body:
